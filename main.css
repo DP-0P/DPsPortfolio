@@ -37,3 +37,12 @@ a:hover{
 .darkMode{
     background-color: #000;
 }
+
+.darkButton{
+    float: right;
+    height: 35px;
+}
+
+.dp{
+    border-radius: 50%;
+}
