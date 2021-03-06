@@ -31,16 +31,7 @@ a:hover{
 }
 
 .active a{
-    background-color: aqua;
-}
-
-.darkMode{
-    background-color: #000;
-}
-
-.darkButton{
-    float: right;
-    height: 35px;
+    background-color: black;
 }
 
 .dp{
