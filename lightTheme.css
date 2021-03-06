@@ -98,3 +98,15 @@ a:hover{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .sun{
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      z-index: 1;
+  }
+
+  .moon{
+    position: absolute;
+    opacity: 0;
+}
