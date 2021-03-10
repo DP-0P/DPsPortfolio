@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(235, 235, 235);
+  height: 100%;
 }
 
 .navbar {
@@ -148,7 +149,8 @@ body {
   }
 }
 
-.welcomedp{
-  width: 100%;
-  height: auto;
+.bgimg1{
+  background-image: url("/Resources/dp2.jpg");
+  min-height: 100%;
 }
+
