@@ -1,16 +1,17 @@
-body{
-    margin: 0;
-    padding: 0; 
-    background-color: rgb(235, 235, 235);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(235, 235, 235);
 }
 
-.navbar{
+.navbar {
   overflow: hidden;
   background-color: rgb(204, 203, 203);
   position: fixed;
   top: 0;
   width: 100%;
   height: 45px;
+  z-index: 1;
 }
 
 .navbar a {
@@ -28,75 +29,126 @@ body{
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    float: right;
-    margin: 5px;
-  }
- 
-  .switch input {
-    opacity: 0;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+  margin: 5px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  padding-top: 5px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(148, 79, 79);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sun {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  z-index: 1;
+}
+
+.moon {
+  position: absolute;
+  opacity: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+body {
+  height: calc(100vh - 8em);
+  color: rgba(5, 5, 5, 0.75);
+  font-family: "Anonymous Pro", monospace;
+  background-color: rgb(224, 222, 222);
+}
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4.5s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+
+}
+
+@keyframes typewriter {
+  from {
     width: 0;
-    height: 0;
-    padding-top: 5px;
   }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(148, 79, 79);
-    -webkit-transition: .4s;
-    transition: .4s;
+  to {
+    width: 21em;
   }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}
 
-  .sun{
-      position: absolute;
-      right: 3px;
-      top: 3px;
-      z-index: 1;
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
   }
+  to {
+    border-right-color: transparent;
+  }
+}
 
-  .moon{
-    position: absolute;
-    opacity: 0;
+.welcomedp{
+  width: 100%;
+  height: auto;
 }
