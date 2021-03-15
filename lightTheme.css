@@ -238,3 +238,25 @@ h3 {
   background-size: cover;
 }
 
+.aboutDP{
+  background-image: url(/Resources/dp.jpg);
+  background-size: 550px 550px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-left: 45px;
+  margin-top: 45px;
+  height: 118%;
+
+  position: relative;
+  opacity: 0.65;
+}
+
+.aboutHeading{
+  text-align: center;
+}
+
+.about {
+  font-size: 30px;
+  width: 550px;
+  text-align: justify;
+}
