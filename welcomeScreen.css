@@ -3,6 +3,7 @@ body {
     height: calc(100vh - 8em);
     color: rgb(17, 224, 214);
     font-family: "Anonymous Pro", monospace;
+    scroll-behavior: smooth;
   }
   
   .line-1 {
