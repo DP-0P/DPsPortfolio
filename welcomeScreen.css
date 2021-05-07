@@ -4,6 +4,11 @@ body {
     color: rgb(17, 224, 214);
     font-family: "Anonymous Pro", monospace;
     scroll-behavior: smooth;
+    text-align: center;
+  }
+
+  .welcomeText{
+      padding: 335px;
   }
   
   .line-1 {
@@ -30,7 +35,7 @@ body {
       width: 0;
     }
     to {
-      width: 21em;
+      width: 22em;
     }
   }
   

@@ -1,4 +1,4 @@
 
-    setTimeout(function(){
-        window.location.href = '/main.html';
-    }, 6000);
+    // setTimeout(function(){
+    //     window.location.href = '/main.html';
+    // }, 6000);
