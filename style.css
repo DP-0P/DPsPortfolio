@@ -1,165 +1,30 @@
-/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 /* rgb(255, 81, 81);
 rgb(0,255,255); */
 
-:root{
-  --blue: rgb(0,255,255);
-  --red: rgb(255,81,81);
-  --background: #17182f; 
-}
-/* body {
-  height: calc(100vh - 8em);
-  /* color: rgb(17, 224, 214); */
-  /* color: var(--blue); */
-  
-  /* font-family: "Anonymous Pro", monospace; */
-/* } */ 
-
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
+try{
+  color: rgb(0, 255, 255);
+  color: rgb(255, 81, 81) ;
 }
 
-.anim-typewriter {
-  animation: typewriter 4.5s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
 
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(0, 0, 0, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-/* .bgimg1{
-  background-image: url("/Resources/dp2.jpg");
-  min-height: 100%;
-} */
-
-/* #background1{
-  background-image: url(/Resources/dp2);
-  background-color: #f51414;
-}
-
-body, html {
-  height: 100%;
+*{
+  padding: 0;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  box-sizing: border-box;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url(/Resources/dp2.jpg);
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image: url(/Resources/dp.jpg);
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url(/Resources/dp2.jpg);
-  min-height: 400px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
+/* body{
   width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-/* @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll; */
-  /* }
-} */ 
-
-.background-1{
-  height: 118%;
-  background-color:#17182f;
-  background-size: cover;
-}
-
-.aboutDP{
-  background-image: url(/Resources/dp.jpg);
-  background-size: 550px 550px;
-  background-repeat: no-repeat;
-  background-position: left center;
-  margin-left: 45px;
-  margin-top: 45px;
-  height: 118%;
-
-  position: relative;
-  opacity: 0.65;
-}
-
-.aboutHeading{
-  text-align: center;
-}
-
-.about {
-  font-size: 30px;
-  width: 550px;
-  text-align: justify;
+  height: 100vh;
+  background:black;
+  overflow: hidden;
 } */
-
-/* particle background */
 
 /* ---- reset ---- */
 
 body {
   margin: 0;
-  font:normal 75% Arial, Helvetica, sans-serif;
+  background-color: #17182f;
 }
 
 canvas {
@@ -167,52 +32,11 @@ canvas {
   vertical-align: bottom;
 }
 
+
 /* ---- particles.js container ---- */
 
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #b61924;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
 }
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
