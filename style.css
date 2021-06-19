@@ -4,7 +4,8 @@ rgb(0,255,255); */
 :root {
   --blue: rgb(0, 255, 255);
   --red: rgb(255, 81, 81);
-  --darkerBlue:rgb(0, 255, 255);
+  --darkerBlue:rgb(39, 173, 173);
+  --darkerRed:rgb(197, 45, 45);;
 }
 
 .test {
@@ -39,7 +40,7 @@ section {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--blue);
+  background-color: var(--darkerBlue);
   background-image: -webkit-linear-gradient(
     90deg,
     transparent,
@@ -51,7 +52,7 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 10px;
-  background-color: var(--red);
+  background-color: var(--darkerRed);
   background-image: -webkit-linear-gradient(
     90deg,
     transparent,
