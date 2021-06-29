@@ -229,14 +229,32 @@ img{
 
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--red);
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  box-shadow: 0 10px 36px rgba(15, 56, 236, 0.76);
+}
+
+.container { 
+  height: 20px;
+  position: relative;
+}
+
+.projectBTN{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.htmlIcon:hover{
+  box-shadow: 0 10px 36px rgba(13, 236, 61, 0.794);
 }
 
 .about__container{
@@ -286,7 +304,7 @@ img{
 .skills__icon{
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: var(--first-color);
+  color: var(--blue);
 }
 .skills__names{
   display: flex;
