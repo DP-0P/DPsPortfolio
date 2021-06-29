@@ -143,7 +143,21 @@ img{
     background-color: var(--back);
     transition: .5s;
   }
+
+  .projectMSG{
+    padding-left: 45px;
+  }
 }
+
+@media screen and (max-width: 350px){
+  .block{
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 .nav__item{
   margin-bottom: var(--mb-4);
 }
@@ -242,15 +256,24 @@ img{
 .container { 
   height: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .projectBTN{
   margin: 0;
-  position: absolute;
   top: 50%;
-  left: 150px;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.block{
+  float: left;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .htmlIcon:hover{
@@ -335,8 +358,14 @@ img{
   border-radius: .5rem;
 }
 
+.contactICON{
+  padding: 10px;
+}
+
 .work__container{
   row-gap: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .work__img{
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
@@ -351,23 +380,8 @@ img{
   transform: scale(1.1);
 }
 
-.contact__input{
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-.contact__button{
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.projectMSG{
+  color: var(--blue);
 }
 
 .footer{
