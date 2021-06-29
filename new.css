@@ -270,6 +270,7 @@ img{
 }
 .skills__text{
   margin-bottom: var(--mb-4);
+  color: var(--blue);
 }
 .skills__data{
   display: flex;
