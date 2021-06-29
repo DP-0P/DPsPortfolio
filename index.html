@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="new.css" />
 
-        
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-        <title>DPs Portfolio</title>
-    </head>
-    <body>
-        
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Deepsk</a>
-                </div>
+    <title>Portfolio website complete</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Deepak</a>
+        </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                       
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active"
+                ><span class="nav__item-color">Home</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><span class="nav__item-color">About</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><span class="nav__item-color">Skills</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link"
+                ><span class="nav__item-color">Projects</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"
+                ><span class="nav__item-color">Contact</span></a
+              >
+            </li>
+          </ul>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-        <main class="l-main">
-            <section class="about section " id="about">
-                
+    <main class="l-main">
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hey there,<br />Welcome to my profile...<br />Myself
+            <span class="home__title-color">DP</span><br />& I'm Developer.
+          </h1>
+        </div>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="/Resources/dp.jpg" alt="">
-                    </div>
-                    
-                    <div>
+        <div class="home__social"></div>
 
-                        <h1 class="home__title">Hey there,<br>Welcome to my profile<br>It's me <span class="home__title-color">DP</span><br> here.</h1>
+        <div class="home__img">
+          <img src="assets/img/perfil.png" alt="" />
+        </div>
+      </section>
 
-                    
-                       </div>                                   
-                </div>
-            </section>
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-           
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="" />
+          </div>
 
-        
-        <script src="https://unpkg.com/scrollreveal"></script>
+          <div>
+            <h2 class="about__subtitle">
+              I'am <span class="home__title-color">DP</span>
+            </h2>
+            <p class="about__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
+              ut voluptates soluta, aut earum nemo recusandae cumque
+              perferendis! Recusandae alias accusamus atque.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        
-        <script src="index.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="index.js"></script>
+  </body>
 </html>
