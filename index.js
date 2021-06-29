@@ -56,6 +56,18 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-
+$(function(){
+    $('.glitch').mgGlitch({
+      destroy : false,
+      glitch : true,
+      scale : true,
+      blend : true,
+      blendModeType : 'hue',
+      glitchTimeMin : 100,
+      glitchTimeMax : 200,
+      glitch2TimeMin : 10,
+      glitch2TimeMax : 200,
+    });
+  });
 
 
